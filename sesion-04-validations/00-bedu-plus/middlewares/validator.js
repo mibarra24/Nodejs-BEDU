@@ -1,3 +1,6 @@
-const { CreateVallidator, createValidator } = require("express-joi-validation");
+const { createValidator } = require("express-joi-validation");
 
-module.exports = createValidator();
+// passError: true manda el error a express
+module.exports = createValidator({
+	passError: true,
+});
